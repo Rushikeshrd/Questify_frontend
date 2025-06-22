@@ -1,4 +1,4 @@
-export const BASE_URL = "https://questify-backend-htxi.onrender.com";
+export const BASE_URL = "https://questify-backend-i1cz.onrender.com";
 
 export const API_PATHS = {
   AUTH: {
