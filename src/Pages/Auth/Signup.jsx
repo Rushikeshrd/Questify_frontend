@@ -73,15 +73,17 @@ const Signup = ({ setCurrentPage }) => {
   };
 
   return (
-    <div className="w-[90vw] md:w-[33vw] p-7 flex flex-col justify-center">
-      <h3 className="text-lg font-semibold text-black">Create an Account</h3>
-      <p className="text-xs text-slate-700 mt-[5px] mb-6">
+    <div className="w-[90vw] md:w-[33vw] p-7 flex flex-col justify-center bg-white rounded-xl shadow-lg">
+      <h3 className="text-lg font-semibold text-[#1E1E1E]">
+        Create an Account
+      </h3>
+      <p className="text-xs text-[#475569] mt-[5px] mb-6">
         Join us today by entering your details below.
       </p>
       <form onSubmit={handleSignUp}>
         <ProfilePhotoSelector image={profilePic} setImage={setProfilePic} />
 
-        <div className="grid grid-cols-1 md:grid-cols-1 gap-2">
+        <div className="grid grid-cols-1 gap-2">
           <Input
             value={fullName}
             onChange={({ target }) => setFullName(target.value)}
@@ -100,21 +102,22 @@ const Signup = ({ setCurrentPage }) => {
             value={password}
             onChange={({ target }) => setPassword(target.value)}
             label="Password"
-            placeholder="Min 8 Character"
+            placeholder="Min 8 Characters"
             type="password"
           />
         </div>
+
         {error && <p className="text-red-500 text-xs pb-2.5">{error}</p>}
+
         <button type="submit" className="btn-primary">
           SIGN UP
         </button>
-        <p className="text-[13px] text-slate-800 mt-3">
+
+        <p className="text-[13px] text-[#334155] mt-3">
           Already have an account?{" "}
           <button
-            className="font-medium text-primary underline cursor-pointer"
-            onClick={() => {
-              setCurrentPage("login");
-            }}
+            className="font-medium text-[#6366F1] underline cursor-pointer"
+            onClick={() => setCurrentPage("login")}
           >
             Login
           </button>
