@@ -1,4 +1,4 @@
-export const BASE_URL = "https://dancing-meerkat-14d560.netlify.app/";
+export const BASE_URL = "https://questify-backend-htxi.onrender.com";
 
 export const API_PATHS = {
   AUTH: {
