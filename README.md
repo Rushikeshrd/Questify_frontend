@@ -1,12 +1,47 @@
-# React + Vite
+# Questify 🎯
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Questify** is an AI-powered interview preparation platform that generates personalized questions based on user input such as target role, years of experience, and technical focus areas. It uses Gemini AI to craft high-quality questions for self-practice.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- AI-generated interview questions based on form input
+- Dynamic sessions with personalized results
+- "Load More" to generate additional questions
+- "Learn More" for detailed explanation of each question
+- "Pin" functionality to bookmark important questions
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+**Frontend:**
+- ReactJS + Vite
+- Tailwind CSS
+- Framer Motion
+- React Icons & React Toast
+
+**Backend:**
+- Node.js
+- Express.js
+- MongoDB
+- JWT Authentication
+
+**AI Integration:**
+- Google Gemini API for question generation
+
+## 🔮 Upcoming Features
+
+- PDF export of generated questions
+- Enhanced login with full profile management
+- and still thinking...
+
+## 🧑‍💻 Setup Instructions
+
+```bash
+# Clone the repo
+git clone https://github.com/Rushikeshrd/Questify_Backend.git
+
+# Install dependencies
+cd backend
+npm install
+
+# Run the server
+npm run dev
